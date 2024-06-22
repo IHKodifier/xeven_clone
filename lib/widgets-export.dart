@@ -5,3 +5,5 @@ export 'package:xeven_clone/widgets/app_bar.dart';
 export 'package:xeven_clone/screens/home_scrollview.dart';
 export 'package:cached_network_image/cached_network_image.dart';
 export 'package:xeven_clone/widgets/xeven_logo.dart';
+export 'package:xeven_clone/widgets/tag_line.dart';
+export 'package:auto_size_text/auto_size_text.dart';
