@@ -7,3 +7,7 @@ export 'package:cached_network_image/cached_network_image.dart';
 export 'package:xeven_clone/widgets/xeven_logo.dart';
 export 'package:xeven_clone/widgets/tag_line.dart';
 export 'package:auto_size_text/auto_size_text.dart';
+export 'package:xeven_clone/widgets/unstoppable_business.dart';
+export 'package:xeven_clone/widgets/services_we_offer.dart';
+export 'package:xeven_clone/widgets/services_text.dart';
+

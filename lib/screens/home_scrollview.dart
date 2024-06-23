@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:xeven_clone/widgets-export.dart';
 
+
 class MyCustomScrollView extends StatefulWidget {
   const MyCustomScrollView({super.key});
 
@@ -69,6 +70,9 @@ class _MyCustomScrollViewState extends State<MyCustomScrollView> {
             ],
           ),
         ),
+        SliverToBoxAdapter(child: UnstoppableBusiness(),),
+        SliverToBoxAdapter(child: ServicesWeOffer(),),
+        SliverToBoxAdapter(child: SizedBox(height: 100,),),
       ],
     );
   }
