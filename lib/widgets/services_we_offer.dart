@@ -190,13 +190,13 @@ class _ServicesWeOfferState extends State<ServicesWeOffer> {
                                   height: 10,width: 10,
                                 
                                   child: Container(
-                                      color: Color.fromRGBO(0, 0,55, 1.0),
+                                      color: const Color.fromRGBO(0, 0,55, 1.0),
                                   ),
                                 
                                 ),
                               
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: "\u00A0", // Non-breaking space character
                                 style: TextStyle(
                                     letterSpacing:
@@ -204,7 +204,7 @@ class _ServicesWeOfferState extends State<ServicesWeOffer> {
                               ),
                               TextSpan(
                                 text: selectedService?.benefits[0].title,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 16.0,
                                   color: Colors.black,
                                 ),
