@@ -64,15 +64,17 @@ class _MyCustomScrollViewState extends State<MyCustomScrollView> {
                   right: 0,
                   child: Container(
                       // color: Colors.yellow,
-                      margin: EdgeInsets.symmetric(horizontal: 256), 
+                      margin: const EdgeInsets.symmetric(horizontal: 256), 
                       // padding: EdgeInsets.symmetric(horizontal: 128),
                       child: _stackChildren[2])),
             ],
           ),
         ),
-        SliverToBoxAdapter(child: UnstoppableBusiness(),),
-        SliverToBoxAdapter(child: ServicesWeOffer(),),
-        SliverToBoxAdapter(child: SizedBox(height: 100,),),
+        const SliverToBoxAdapter(child: UnstoppableBusiness(),),
+        
+        const SliverToBoxAdapter(child: ServicesWeOffer(),),
+
+        const SliverToBoxAdapter(child: SizedBox(height: 100,),),
       ],
     );
   }

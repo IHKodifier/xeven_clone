@@ -45,10 +45,10 @@ Our AI-based solutions offer a clear pathway to success, helping businesses impr
               ],
             ),
           ),
-          Image.network(
-            'https://www.xevensolutions.com/wp-content/uploads/2024/02/home-section-img.png',
+          CachedNetworkImage(
+            imageUrl:'https://www.xevensolutions.com/wp-content/uploads/2024/02/home-section-img.png',
             width: MediaQuery.of(context).size.width * .45,
-            scale: 0.75,
+            // scale: 0.75,
           ),
           const Spacer(),
         ],

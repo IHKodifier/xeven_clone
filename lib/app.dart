@@ -19,6 +19,7 @@ class MainApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'poppins',
+      useMaterial3: true,
       elevatedButtonTheme: ElevatedButtonThemeData(style: elevatedButtonStyle)),
 
       home: const Scaffold(

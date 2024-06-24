@@ -11,3 +11,7 @@ export 'package:xeven_clone/widgets/unstoppable_business.dart';
 export 'package:xeven_clone/widgets/services_we_offer.dart';
 export 'package:xeven_clone/widgets/services_text.dart';
 
+
+
+//  color: const Color.fromRGBO(0, 0, 55, 1.0),
+
