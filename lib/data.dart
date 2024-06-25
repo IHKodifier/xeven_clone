@@ -27,27 +27,27 @@ List<XevenService> xevenServices = [
         'At Xeven Solutions, innovation meets intelligence. Our team of experts utilizes cutting-edge technologies to craft custom AI solutions that seamlessly integrate with your unique requirements, revolutionizing how you operate.',
     benefits: [
       Benefits(
-          title: 'Cutting-Edge Expertise',
+          title: 'Cutting-Edge Expertise:',
           description:
-              '''Our team of experts is proficient in utilizing the latest technologies to develop custom AI solutions tailored to your needs. '''),
+              ''' Our team of experts is proficient in utilizing the latest technologies to develop custom AI solutions tailored to your needs. '''),
       Benefits(
           title: 'Seamless Integration:',
           description:
-              '''We are dedicated to seamlessly integrating our AI solutions with your existing infrastructure, ensuring a smooth transition. '''),
+              ''' We are dedicated to seamlessly integrating our AI solutions with your existing infrastructure, ensuring a smooth transition. '''),
       Benefits(
           title: 'Comprehensive AI Development Services: ',
           description:
-              '''From machine learning to natural language processing, our AI Development Services elevate your organization's capabilities. '''),
+              ''' From machine learning to natural language processing, our AI Development Services elevate your organization's capabilities. '''),
       Benefits(
           title: 'Empowering Organizational Capabilities:',
           description:
-              ''' Our mission is to empower organizations like yours to not only adapt but thrive in the dynamic landscape of AI technology.'''),
+              '''  Our mission is to empower organizations like yours to not only adapt but thrive in the dynamic landscape of AI technology.'''),
     ],
   ),
   XevenService(
-    name: 'AI Chatbot Development',
+    name: 'AI Chatbot Development:',
     description:
-        'Our AI Chatbot Development Services are designed to transform customer interactions for businesses. We specialize in crafting Intelligent chatbots that engage in human-like dialogue.',
+        ' Our AI Chatbot Development Services are designed to transform customer interactions for businesses. We specialize in crafting Intelligent chatbots that engage in human-like dialogue.',
     benefits: [
       Benefits(
           title: 'Smart Dialogue:',
@@ -56,7 +56,7 @@ List<XevenService> xevenServices = [
       Benefits(
           title: 'Task Automation:',
           description:
-              '''Our chatbots excel in automating tasks, streamlining processes, and reducing manual intervention. It significantly improves efficiency. '''),
+              ''' Our chatbots excel in automating tasks, streamlining processes, and reducing manual intervention. It significantly improves efficiency. '''),
       Benefits(
           title: '24/7 Customer Support:  ',
           description:
@@ -64,31 +64,31 @@ List<XevenService> xevenServices = [
       Benefits(
           title: 'Elevated Online Presence:',
           description:
-              '''Experience the future of customer interaction and elevate your brand’s online presence with our AI Chatbot Services today.'''),
+              ''' Experience the future of customer interaction and elevate your brand’s online presence with our AI Chatbot Services today.'''),
     ],
   ),
   XevenService(
     name: 'ChatGPT Integration',
     description:
-        'Elevate user experiences by leveraging our ChatGPT Integration Services into your business processes. It enables you to leverage the advanced capabilities of NLP and ML to provide more intuitive and personalized interactions for your customers.',
+        ' Elevate user experiences by leveraging our ChatGPT Integration Services into your business processes. It enables you to leverage the advanced capabilities of NLP and ML to provide more intuitive and personalized interactions for your customers.',
     benefits: [
       Benefits(
           title: 'Revolutionize Business Operations:',
           description:
-              '''Revolutionize your business operations and reach newer levels of success with our ChatGPT Integration Services.'''),
+              ''' Revolutionize your business operations and reach newer levels of success with our ChatGPT Integration Services.'''),
       Benefits(
           title: 'Functionality Enhancement:',
           description:
-              '''Enhance the functionality of your existing software platforms by leveraging the power of NLP and ML.
+              ''' Enhance the functionality of your existing software platforms by leveraging the power of NLP and ML.
               Personalized'''),
       Benefits(
           title: 'Customer Support: ',
           description:
-              '''With our ChatGPT Integration Services, you can offer personalized customer support to increase user satisfaction.'''),
+              ''' With our ChatGPT Integration Services, you can offer personalized customer support to increase user satisfaction.'''),
       Benefits(
           title: 'Task Automation & Competetive Advantage:',
           description:
-              '''Automate repetitive tasks with ChatGPT Integration and thrive in a highly competitive business landscape.'''),
+              ''' Automate repetitive tasks with ChatGPT Integration and thrive in a highly competitive business landscape.'''),
     ],
   ),
   XevenService(
