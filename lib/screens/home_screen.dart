@@ -1,7 +1,7 @@
 import 'package:xeven_clone/widgets-export.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeScreenBackdrop extends StatelessWidget {
+  const HomeScreenBackdrop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
-      // placeholder: Text('Full bleed image'),
+     
       ), 
     ));
   }

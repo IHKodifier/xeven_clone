@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
 import 'package:xeven_clone/widgets-export.dart';
-
 
 class MyCustomScrollView extends StatefulWidget {
   const MyCustomScrollView({super.key});
@@ -12,7 +10,7 @@ class MyCustomScrollView extends StatefulWidget {
 class _MyCustomScrollViewState extends State<MyCustomScrollView> {
   // State variable to manage the children of the Stack
   List<Widget> _stackChildren = [
-    const HomeScreen(), // Main content of the home screen
+    const HomeScreenBackdrop(), // Main content of the home screen
     const XevenAppBar(),
     const TagLine(),
   ];
@@ -21,60 +19,38 @@ class _MyCustomScrollViewState extends State<MyCustomScrollView> {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        // SliverAppBar(
-        //   title:
-        //   XevenLogo(),
-        //   expandedHeight: 200,
-        //   // Use flexibleSpace to control the SliverAppBar's layout
-        //   // flexibleSpace: Container(
-        //   //   decoration: const BoxDecoration(
-        //   //     gradient: LinearGradient(
-        //   //       begin: Alignment.topCenter,
-        //   //       end: Alignment.bottomCenter,
-        //   //       colors: [
-        //   //         Color(0xFFF5F5F5),
-        //   //         Color(0xFFFFFFFF),
-        //   //       ],
-        //   //     ),
-        //   //   ),
-        //   //   // child: const Center(
-        //   //   //   child: Text(
-        //   //   //     'Xeven App Bar',
-        //   //   //     style: TextStyle(
-        //   //   //       fontSize: 20,
-        //   //   //       fontWeight: FontWeight.bold,
-        //   //   //       color: Colors.black,
-        //   //   //     ),
-        //   //   //   ),
-        //   //   // ),
-        //   // ),
-        // ),
-
+        //Backgroundimage and text
         SliverToBoxAdapter(
           child: Stack(
             key: const Key('myStack'), // Add a unique key
             children: [
               // Place HomeScreen directly in the Stack
-              _stackChildren[0],
-              _stackChildren[1],
+              _stackChildren[0], //homescreenbackdrop
+              _stackChildren[1], // Xeven AppBar
               Positioned(
+                  // Tag line of company
                   top: 180,
                   bottom: 290,
                   left: 0,
                   right: 0,
-                  child: Container(
-                      // color: Colors.yellow,
-                      margin: const EdgeInsets.symmetric(horizontal: 256), 
-                      // padding: EdgeInsets.symmetric(horizontal: 128),
-                      child: _stackChildren[2])),
+                  child: Container(width: 250, child: _stackChildren[2])),
             ],
           ),
         ),
-        const SliverToBoxAdapter(child: UnstoppableBusiness(),),
-        
-        const SliverToBoxAdapter(child: ServicesWeOffer(),),
-
-        const SliverToBoxAdapter(child: SizedBox(height: 100,),),
+        //unstoppable Business Success
+        const SliverToBoxAdapter(
+          child: UnstoppableBusiness(),
+        ),
+        // Services we Offer
+        const SliverToBoxAdapter(
+          child: ServicesWeOffer(),
+        ),
+        // Bottom spacer
+        const SliverToBoxAdapter(
+          child: SizedBox(
+            height: 100,
+          ),
+        ),
       ],
     );
   }
