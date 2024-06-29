@@ -1,3 +1,4 @@
+import 'package:responsive_framework/responsive_framework.dart';
 import 'package:xeven_clone/widgets-export.dart';
 
 class MyCustomScrollView extends StatefulWidget {
@@ -17,7 +18,12 @@ class _MyCustomScrollViewState extends State<MyCustomScrollView> {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
+  return  ResponsiveBreakpoints.of(context).smallerThan(MOBILE)? Container(
+    color: Colors.deepOrange,
+    child: Center(child: Text('Xeven.com requires aminimum screensize of 450 pixels wide. \n \n \n Try on a wider screen')), 
+
+  )
+     :CustomScrollView(
       slivers: [
         //Backgroundimage and text
         SliverToBoxAdapter(

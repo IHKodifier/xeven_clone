@@ -14,7 +14,7 @@ class HomeScreenBackdrop extends StatelessWidget {
       imageBuilder: (context, imageProvider) => Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: NetworkImage('https://img.freepik.com/premium-photo/abstract-purple-lines-triangles-glowing-high-tech-digital-energy-abstract-background_75563-14546.jpg?w=826'),
+            image: NetworkImage('https://noetic.org/wp-content/uploads/2022/06/My-project-4-800x800.png'),
             fit: BoxFit.cover,
           ),
         ),

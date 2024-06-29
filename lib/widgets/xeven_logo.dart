@@ -1,3 +1,4 @@
+import 'package:responsive_framework/responsive_framework.dart';
 import 'package:xeven_clone/widgets-export.dart';
 
 class XevenLogo extends StatefulWidget {
@@ -15,8 +16,13 @@ class _XevenLogoState extends State<XevenLogo> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: SizedBox(height: 140,width: 150,
-        child: Image.asset('assets/images/xeven-logo.png'),
+      child: SizedBox(
+        height: 100,
+        width: 100,
+    
+        child: Image.asset('assets/images/xeven-logo.png',
+        fit: BoxFit.contain,),
+        
       ),
     );
   }

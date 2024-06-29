@@ -19,8 +19,6 @@ class Benefits {
 }
 
 List<XevenService> xevenServices = [
- 
- 
   XevenService(
     name: 'AI Development',
     description:
@@ -114,7 +112,6 @@ List<XevenService> xevenServices = [
               '''With our expertise in Machine Learning Development Services, we develop future-proof solutions that are affordable, flexible, and scalable..'''),
     ],
   ),
-
   XevenService(
     name: 'AI Development',
     description:
@@ -208,7 +205,6 @@ List<XevenService> xevenServices = [
               '''With our expertise in Machine Learning Development Services, we develop future-proof solutions that are affordable, flexible, and scalable..'''),
     ],
   ),
-
   XevenService(
     name: 'AI Development',
     description:
@@ -302,7 +298,51 @@ List<XevenService> xevenServices = [
               '''With our expertise in Machine Learning Development Services, we develop future-proof solutions that are affordable, flexible, and scalable..'''),
     ],
   ),
+];
 
+List<String> appBarMenu = [
+  'Services',
+  'Salesforce',
+  'Industries',
+  'Portfolio',
+  'Company',
+  'Resources'
+];
+List<String> appBarMenu_services = [
+  'Al Development Services',
+  'Al Chatbot Development',
+  'Predictive Modelling',
+  'Mobile App Development',
+  'Chat GPT Integrations',
+  'Custom Software',
+  'Natural Language Processing',
+  'Digital Marketing',
+  'Machine Learning',
+  'DevOps',
+  'Computer Vision',
+  'Custom Web Development',
+  'Staff Augmentation',
+  'IJI UX Design',
+];
 
-
+List<String> appBarMenu_industries = [
+  'HealthTech',
+  'EdTech',
+  'FinTech',
+  'GreenTech',
+  'Internet of Things',
+  'Retail',
+  'Al Diagnostics',
+  'E-commerce',
+  'Smart Healthcare',
+  'HIPAA Compliance',
+];
+List<String> appBarMenu_company = [
+  'About us ',
+  'Life at Xevern',
+];
+List<String> appBarMenu_Resource = [
+  'Blogs',
+  'Gallery',
+  'Careers',
 ];
