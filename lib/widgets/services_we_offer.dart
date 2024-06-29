@@ -71,9 +71,10 @@ class _ServicesWeOfferState extends State<ServicesWeOffer> {
         servicesWeOfferVertical() {
           return Container(
             color: Colors.pink,
-            height: 100,
+            // height: 100,
             width: MediaQuery.of(context).size.width - 50 - 50,
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Container(
                   width: double.infinity,
