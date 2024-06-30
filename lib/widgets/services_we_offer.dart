@@ -1,9 +1,6 @@
 
 // ignore_for_file: sized_box_for_whitespace
 
-import 'package:google_fonts/google_fonts.dart';
-import 'package:responsive_framework/responsive_framework.dart';
-import 'package:xeven_clone/data.dart';
 import 'package:xeven_clone/widgets-export.dart';
 
 class ServicesWeOffer extends StatefulWidget {
@@ -26,10 +23,7 @@ class _ServicesWeOfferState extends State<ServicesWeOffer> {
         const SizedBox(
           height: 50,
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 64.0),
-          child: headerRow(),
-        ),
+        SectionHeader(title: 'Services We Offer',),
         ResponsiveBreakpoints.of(context).isDesktop
             ? servicesWeOfferHorizontal()
             : servicesWeOfferVertical(),
@@ -132,7 +126,7 @@ class _ServicesWeOfferState extends State<ServicesWeOffer> {
                           ),
                         )),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   )
                 ],
@@ -197,8 +191,8 @@ class _ServicesWeOfferState extends State<ServicesWeOffer> {
                 ),
                 Row(
                   children: [
-                    Spacer(),
-                    ElevatedButton(onPressed: (){}, child: Text('Read More')),
+                    const Spacer(),
+                    ElevatedButton(onPressed: (){}, child: const Text('Read More')),
                   ],
                 ),
               ],
@@ -209,25 +203,25 @@ class _ServicesWeOfferState extends State<ServicesWeOffer> {
     );
   }
 
-  headerRow() {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.asset('assets/images/vector1.png'),
-            Text(
-              'Services We Offer',
-              style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                  color: Theme.of(context).colorScheme.onPrimaryContainer),
-            ),
-          ],
-        ),
-      ],
-    );
-  }
+  // headerRow() {
+  //   return Row(
+  //     crossAxisAlignment: CrossAxisAlignment.start,
+  //     mainAxisAlignment: MainAxisAlignment.start,
+  //     children: [
+  //       Row(
+  //         crossAxisAlignment: CrossAxisAlignment.center,
+  //         children: [
+  //           Image.asset('assets/images/vector1.png'),
+  //           Text(
+  //             'Services We Offer',
+  //             style: Theme.of(context).textTheme.displaySmall?.copyWith(
+  //                 color: Theme.of(context).colorScheme.onPrimaryContainer),
+  //           ),
+  //         ],
+  //       ),
+  //     ],
+  //   );
+  // }
 
   RichText benefits_widget(BuildContext context, int index) {
     return RichText(

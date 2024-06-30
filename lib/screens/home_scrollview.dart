@@ -1,5 +1,5 @@
-import 'package:responsive_framework/responsive_framework.dart';
 import 'package:xeven_clone/widgets-export.dart';
+
 
 class MyCustomScrollView extends StatefulWidget {
   const MyCustomScrollView({super.key});
@@ -20,7 +20,9 @@ class _MyCustomScrollViewState extends State<MyCustomScrollView> {
   Widget build(BuildContext context) {
   return  ResponsiveBreakpoints.of(context).smallerThan(MOBILE)? Container(
     color: Colors.deepOrange,
-    child: Center(child: Text('Xeven.com requires aminimum screensize of 450 pixels wide. \n \n \n Try on a wider screen')), 
+            child: const Center(
+                child: Text(
+                    'Xeven.com requires aminimum screensize of 450 pixels wide. \n \n \n Try on a wider screen')), 
 
   )
      :CustomScrollView(
@@ -33,13 +35,14 @@ class _MyCustomScrollViewState extends State<MyCustomScrollView> {
               // Place HomeScreen directly in the Stack
               _stackChildren[0], //homescreenbackdrop
               _stackChildren[1], // Xeven AppBar
+                    //Banner,AppBar and HeadLine
               Positioned(
                   // Tag line of company
                   top: 180,
                   bottom: 290,
                   left: 0,
                   right: 0,
-                  child: Container(width: 250, child: _stackChildren[2])),
+                        child: SizedBox(width: 250, child: _stackChildren[2])),
             ],
           ),
         ),
@@ -51,6 +54,18 @@ class _MyCustomScrollViewState extends State<MyCustomScrollView> {
         const SliverToBoxAdapter(
           child: ServicesWeOffer(),
         ),
+              // Why Choose Xeven
+              const SliverToBoxAdapter(
+                child: WhyChooseXeven(),
+              ),
+              // Scrolling Ticker
+              const SliverToBoxAdapter(
+                child: ScrollingTicker(),
+              ),
+              // BILLBOARD
+              const SliverToBoxAdapter(
+                child: Billboard(),
+              ),
         // Bottom spacer
         const SliverToBoxAdapter(
           child: SizedBox(

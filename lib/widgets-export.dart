@@ -10,6 +10,19 @@ export 'package:auto_size_text/auto_size_text.dart';
 export 'package:xeven_clone/widgets/unstoppable_business.dart';
 export 'package:xeven_clone/widgets/services_we_offer.dart';
 export 'package:xeven_clone/widgets/services_text.dart';
+export '../widgets/why_choose_xeven.dart';
+export 'package:xeven_clone/widgets/section_header.dart';
+export 'package:responsive_framework/responsive_framework.dart';
+export 'package:xeven_clone/data.dart';
+export 'package:google_fonts/google_fonts.dart';
+export 'package:xeven_clone/widgets/xeven_stats.dart';
+export 'package:xeven_clone/widgets/scrolling_ticker.dart';
+export 'package:xeven_clone/widgets/billboard.dart';
+export 'package:lorem_ipsum/lorem_ipsum.dart';
+
+
+
+
 
 
 

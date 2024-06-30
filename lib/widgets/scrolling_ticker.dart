@@ -15,19 +15,19 @@ class _ScrollingTickerState extends State<ScrollingTicker> {
     return Column(
       children: [
         const SizedBox(
-          height: 20,
+          height: 100,
         ),
         Container(
           color: const Color.fromRGBO(0, 0, 55, 1.0),
-          height: 150,
-          width: double.infinity,
+          height: 100,
+          width: double.infinity, 
           child: CarouselSlider(
             carouselController: _carouselController,
             options: CarouselOptions(
-              height: 320,
+              // height: 320,
               disableCenter: false,
-              autoPlayInterval: const Duration(milliseconds: 80),
-              autoPlayAnimationDuration:const Duration(milliseconds: 500),
+              autoPlayInterval: const Duration(milliseconds: 12),
+              autoPlayAnimationDuration:const Duration(milliseconds: 1300),
               autoPlayCurve: Curves.linear,
               autoPlay: true,
               enableInfiniteScroll: true,
