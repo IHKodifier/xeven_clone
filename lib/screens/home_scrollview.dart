@@ -30,12 +30,13 @@ class _MyCustomScrollViewState extends State<MyCustomScrollView> {
         //Backgroundimage and text
         SliverToBoxAdapter(
           child: Stack(
-            key: const Key('myStack'), // Add a unique key
+            key: const Key('myStack'), 
             children: [
-              // Place HomeScreen directly in the Stack
-              _stackChildren[0], //homescreenbackdrop
-              _stackChildren[1], // Xeven AppBar
-                    //Banner,AppBar and HeadLine
+             //homescreenbackdrop
+              _stackChildren[0], 
+              // Xeven AppBar
+              _stackChildren[1], 
+              //Banner,AppBar and HeadLine
               Positioned(
                   // Tag line of company
                   top: 180,

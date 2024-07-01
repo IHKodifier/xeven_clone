@@ -26,8 +26,8 @@ class _ScrollingTickerState extends State<ScrollingTicker> {
             options: CarouselOptions(
               // height: 320,
               disableCenter: false,
-              autoPlayInterval: const Duration(milliseconds: 12),
-              autoPlayAnimationDuration:const Duration(milliseconds: 1300),
+              autoPlayInterval: const Duration(milliseconds: 900),
+              autoPlayAnimationDuration:const Duration(milliseconds: 1200),
               autoPlayCurve: Curves.linear,
               autoPlay: true,
               enableInfiniteScroll: true,
